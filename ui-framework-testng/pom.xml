@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.saltedfish</groupId>
+        <artifactId>ui-automation-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ui-framework-testng</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- 依赖核心 UI 能力 -->
+        <dependency>
+            <groupId>com.saltedfish</groupId>
+            <artifactId>ui-framework-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- TestNG：BaseTest、Listener 等直接用到注解、接口，所以是编译期依赖 -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Allure TestNG 适配：用于步骤、附件、特性标注等 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>

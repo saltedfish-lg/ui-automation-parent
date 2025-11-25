@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://www.baidu.com",
+  "browser": "CHROME",
+  "headless": false,
+  "explicitWaitSec": 10,
+  "implicitWaitSec": 2,
+  "pageLoadTimeoutSec": 30,
+  "weComWebhookUrl": "",
+  "dingTalkWebhookUrl": "",
+  "chromeDriverPath": ""
+}
